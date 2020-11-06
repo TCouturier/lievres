@@ -1,0 +1,54 @@
+---
+title: "Changement de distribution du Lièvre variable et lièvre d'Europe dans le parc du Mercantour"
+author: "Salle 2, TC, NM, MA, FH"
+date: "6 novembre 2020"
+output: ioslides_presentation # xaringan
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+devtools::load_all()
+```
+
+## Le projet
+
+Le readme ?
+
+## Les données
+
+- polygones
+- rasters
+- Bullet 3
+
+## Le research compendium
+
+1. Inputs : fonction pour lire les données 
+
+2. Outputs : fonctions pour visualiser les cartes
+
+3. Creation du package
+
+4. make.R
+
+5. Drake
+
+## 1. Inputs
+
+exemple de lecture du shape file
+dataSHP <- function(nameSHP){
+  sf::st_read(dsn = here::here("data") ,
+              layer = nameSHP)
+  #j'ecris mon chemin depuis ma racine projet avec here
+}
+
+```{r}
+Lievres::dataSHP("loc_traces")
+```
+
+## Slide with Plot
+
+```{r pressure}
+plot(pressure)
+```
+
+

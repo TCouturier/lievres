@@ -1,0 +1,25 @@
+Package: Lievres
+Title: Lievres Mercantour
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Floren",
+           family = "HUGON",
+           role = c("aut", "cre"),
+           email = "floren.hugon@live.fr")
+Description: Reanalyse des crottes de lievres du Mercantour
+License: MIT + file LICENSE
+ByteCompile: true
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Imports: 
+    sf,
+    devtools,
+    here,
+    readr,
+    sp,
+    ggplot2,
+    magrittr,
+    raster,
+    drake
